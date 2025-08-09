@@ -18,7 +18,7 @@ export default function DropdownNavbar() {
 
     try {
       await logout();
-      navigate("/pokedex-tailwind/");
+      navigate("/");
     } catch (err) {
       console.log("Error during logging out from header ", err);
       setError("Error during logging out from header");
@@ -47,7 +47,7 @@ export default function DropdownNavbar() {
             {/* Navigation Links */}
             <li>
               <ButtonNavigation>
-                <Link to="/pokedex-tailwind/">Home</Link>
+                <Link to="/">Home</Link>
               </ButtonNavigation>
             </li>
             {/* Dropdown Menu */}

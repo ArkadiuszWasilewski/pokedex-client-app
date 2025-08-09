@@ -57,7 +57,7 @@ export default function ForgotPassword() {
                 />
               </div>
               <div className="flex items-center justify-between">
-                <Link to="/pokedex-tailwind/login">
+                <Link to="/login">
                   Remember your password? <LinkSpan>Log in.</LinkSpan>
                 </Link>
               </div>
@@ -70,7 +70,7 @@ export default function ForgotPassword() {
               </button>
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                 Do not have an account yet?{" "}
-                <Link to="/pokedex-tailwind/signup">
+                <Link to="/signup">
                   <LinkSpan>Sign up!</LinkSpan>
                 </Link>
               </p>

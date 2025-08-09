@@ -28,7 +28,7 @@ function App() {
               <Header />
               <Routes>
                 <Route
-                  path="/pokedex-tailwind/dashboard"
+                  path="/dashboard"
                   element={
                     <PrivateRoute>
                       <Dashboard />
@@ -36,31 +36,22 @@ function App() {
                   }
                 />
                 <Route
-                  path="/pokedex-tailwind/update-profile"
+                  path="/update-profile"
                   element={
                     <PrivateRoute>
                       <UpdateProfile />
                     </PrivateRoute>
                   }
                 />
-                <Route path="/pokedex-tailwind/" element={<MainContent />} />
+                <Route path="/" element={<MainContent />} />
+                <Route path="/login" element={<Login />}></Route>
+                <Route path="/signup" element={<Signup />}></Route>
                 <Route
-                  path="/pokedex-tailwind/login"
-                  element={<Login />}
-                ></Route>
-                <Route
-                  path="/pokedex-tailwind/signup"
-                  element={<Signup />}
-                ></Route>
-                <Route
-                  path="/pokedex-tailwind/forgot-password"
+                  path="/forgot-password"
                   element={<ForgotPassword />}
                 ></Route>
                 {/* Catch-all route for 404 errors */}
-                <Route
-                  path="*"
-                  element={<Navigate to="/pokedex-tailwind/" />}
-                />
+                <Route path="*" element={<Navigate to="/" />} />
               </Routes>
               <Footer />
             </AuthProvider>
